@@ -1,0 +1,107 @@
+.rForm {
+    /* border: 1px solid rgba(103, 104, 110, 0.386); */
+    border: 1px solid rgba(103, 104, 110, 0.386);
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    padding: 60px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.rBody {
+    width: auto;
+    padding: 20px 10px 20px 10px;
+}
+
+#rLabel {
+    font-size: 23px;
+    font-weight: bold;
+    margin: auto;
+    max-width: fit-content;
+    box-sizing: content-box;
+}
+
+.inputComponent {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#email {
+    display: block;
+    margin-top: 1px;
+    height: 25px;
+    width: 98%;
+}
+
+#password {
+    display: block;
+    margin-top: 2px;
+    height: 25px;
+    width: 98%;
+}
+
+#confirmPassword {
+    display: block;
+    margin-top: 2px;
+    height: 25px;
+    width: 98%;
+}
+
+label {
+    margin-right: 14px;
+}
+
+.accountType {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#accountTag {
+    margin-right: 25px;
+}
+
+.rcontainer {
+    display: inline;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* Hide the default radio button */
+
+.rcontainer input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.rcontainer label {
+    position: initial;
+}
+
+.rcontainer:hover input~.check {
+    background-color: gray;
+}
+
+.rcontainer input:checked~.check {
+    background-color: blue;
+}
+
+#registerButton {
+    background-color: #003824;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

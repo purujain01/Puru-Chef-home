@@ -1,0 +1,350 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainText{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;   
+     position: absolute;
+    left: 130px;
+    top: 130px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(197, 206, 206);
+}
+
+.image1{
+
+    position: absolute;
+    left: 130px;
+    top: 230px;
+}
+.image2{
+
+    position: absolute;
+    left: 130px;
+    top: 370px;
+}
+.image3{
+
+    position: absolute;
+    left: 130px;
+    top: 510px;
+}
+
+.mainImage{
+    position: absolute;
+    left: 290px;
+    top: 230px;
+}
+
+.productName{
+    position: absolute;
+    left: 780px;
+    top: 225px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+
+}
+
+.price{
+    position: absolute;
+    left: 780px;
+    top: 285px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+
+}
+
+.edit{
+    position: absolute;
+    right: 100px;
+    top: 225px;
+    font-family: 'Poppins', sans-serif;
+
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: rgb(158, 201, 40);
+    color: white;
+}
+
+.serve{
+    font-weight: 600;
+    font-family: 'Lucida Sans Regular';
+    position: absolute;
+    top: 340px;
+    left: 780px;
+}
+
+#servings{
+    margin: 20px;
+    width: 36px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.time{
+    font-weight: bold;
+}
+.cookTime{
+    display: flex;
+}
+.cookTime p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    position: relative;
+    left: 770px;
+    top: 400px;
+}
+
+/* Ingredients List */
+
+.ingredients{
+    display: flex;
+    position: absolute;
+    top: 465px;
+    left: 780px;
+}
+
+.ingtitle{
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.ingredientlist{
+    margin: -10px 0 0 10px;
+    width: 200px;
+    height: 100px;
+    overflow-y: auto;
+    font-family: 'Poppins';
+    font-size: 14px;
+    
+}
+
+.ingredientlist li{
+  
+    color: black;
+    display: block;
+    padding: 7px;
+}
+
+.ingredientlist a:hover{
+    background-color: #ccc;
+}
+
+
+
+
+
+/* ............*/
+.foodSymbol{
+    display: flex;
+    position: absolute;
+    left: 780px;
+    top: 590px;
+    width: 18px;
+    height: 18px;
+}
+
+.foodSymbol p{
+    white-space: nowrap; 
+    margin-left: 10px;
+    font-family: Tahoma, sans-serif;  
+    font-size: 15px;
+}
+
+.productDesc{
+    width: 500px;
+    position: absolute;
+    top: 680px;
+    left: 130px;
+}
+
+.descTitle{
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.descContent{
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.video{
+    position: absolute;
+    top: 920px;
+    left: 130px;
+}
+.video p{
+    margin: 10px 0 10px 0;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+.instructions{
+    position: absolute;
+    top: 1200px;
+    left: 130px;
+    width: 1000px;
+}
+
+.instructionTitle{
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.instructionContent{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mainButton{
+    display: flex;
+    position: absolute;
+    top: 1500px;
+    left: 130px;
+
+}
+
+.publish{
+    font-family: 'Poppins', sans-serif;
+    width: 340px;
+    height: 45px;
+    border: none;
+    background-color: rgb(158, 201, 40);
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin: 20px 10px 10px 0;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.publish p{
+    margin-top: 14px;
+}
+
+
+.backButton{
+    width: 200px;
+    height: 45px;
+    border: none;
+    background-color: #00442F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+    margin: 20px 10px 10px 0;
+    cursor: pointer;
+}
+
+/*  ...........................*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 140px auto;
+    padding: 20px;
+    background: #fff;
+    width: 32%;
+    height: 28%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h3 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #333;
+    font-family: 'Arial Narrow Bold', sans-serif;
+  }
+
+  .popupcontent{
+      margin: 20px 10px 0 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  #confirmation{
+      margin: 0 10px 0 0;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      top: 10px;
+  }
+
+  .popupcontent label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    
+}
+
+  .confirmExit {
+    position: absolute;
+    top: 170px;
+    left: 230px; 
+    transition: all 200ms;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    width: 160px;
+    height: 30px;
+    background-color: rgb(9, 34, 5);
+    font-family: 'Poppins', sans-serif;
+
+    margin-left: 20px;
+  }
+
+  .confirmExit p{
+      margin-top: 6px;
+      text-align: center;
+  }
+
+  .confirmPublish p{
+      margin: 6px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+
+        font-size: 13px;
+  }
+  .confirmPublish{
+        position: absolute;
+        top: 170px;
+        left: 40px; 
+        
+        width: 160px;
+        height: 30px;
+        border: none;
+        background-color: rgb(158, 201, 40);
+        color: white;
+
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 10px;
+    
+  }

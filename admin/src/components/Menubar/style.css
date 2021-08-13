@@ -1,0 +1,213 @@
+.menubar {
+  font-family: "Maven Pro", serif;
+  background-color: white;
+  box-shadow: 2px 0px 5px rgb(182, 182, 182, 0.75); 
+
+  /* height: 30px; */
+}
+.zang {
+  width: 50%;
+}
+.navTitle {
+  color: darkslategray !important;
+}
+/* .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px !important;
+  background: #ff0000 !important;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px; 
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+} */
+
+
+.navBarProducts:hover
+ {
+  text-decoration: none !important;
+  font-size: 100%;
+  font-weight: 800 !important;
+  color: var(--Ourred);
+  transform: scale(1.15, 1.1);
+}
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px !important;
+  background: #ff0000 !important;
+  color: white;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px; 
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.navBarRegister:hover,
+.navBarLogIn:hover,
+.navBarLogOut:hover {
+  text-decoration: none !important;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--Ourred) !important;
+  border: 2px solid var(--Ourred) !important;
+  background-color: white !important;
+  color:var(--Ourred) !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+.navBarLogIn,
+.navBarLogOut,
+.navBarRegister {
+  border: 1px solid var(--Ourred);
+  color:var(--Ourred) !important;
+  padding: 4px 10px !important;
+  margin: 10px 10px !important;
+  /* border-radius: 20px; */
+  font-size: 13px !important;
+  min-width: 80px;
+}
+
+#navstyle1 {
+  color: var(--Ourred);
+  font-weight: 500;
+  padding: 5px 5px;
+  margin: 10px 10px;
+  font-size: 16px;
+}
+/* #responsive-navbar-nav{
+  background-color: white;
+  color: #198643;
+} */
+@media (max-width: 349px) {
+  
+  .logo {
+    width: 50%;
+  }
+  .zang {
+    width: 50%;
+  }
+  nav {
+    width: 100%;
+  }
+
+  .navBarProducts,
+  .navBarCart,
+  .navBarLogIn,
+  .navBarLogOut .navBarRegister {
+    font-size: 0.9rem;
+  }
+  .menubar {
+    position: absolute !important;
+  }
+  .navbar-toggler{
+    color: #00442f !important;
+
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .navbar-toggler {
+    /* margin-top: 25vh; */
+    margin-left: -4vw;
+    color: #00442f !important;
+  }
+  .logo {
+    width: 50%;
+  }
+  .zang {
+    width: 50%;
+  }
+
+  /* .navBarProducts ,
+  .navBarCart ,
+  .navBarLogIn ,
+  .navBarLogOut
+  .navBarRegister {
+  
+    font-size: .7rem;
+      } */
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+  .navbar-toggler {
+    /* margin-top: 20vh; */
+    margin-left: -2vw;
+    color: #00442f !important;
+
+  }
+
+  .logo {
+    width: 30%;
+  }
+  .zang {
+    width: 50%;
+  }
+  /* .nav-link {
+    padding: 0 !important;
+  } */
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .navbar-toggler {
+    /* margin-top: 22vh; */
+    margin-left: -2vw;
+    color: #00442f !important;
+
+  }
+
+  .logo {
+    width: 30%;
+  }
+  .zang {
+    width: 50%;
+  }
+  /* .nav-link {
+    padding: 0 !important;
+  } */
+}
+
+@media (min-width: 701px) and (max-width: 767px) {
+  .navbar-toggler {
+    width: 100;
+    color: #00442f !important;
+
+  }
+  .logo {
+    width: 30%;
+  }
+  .zang {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1265px) {
+  .stacked {
+    flex-direction: column !important;
+  }
+  .logo {
+    width: 30%;
+  }
+  .zang {
+    width: 50%;
+  }
+
+  #basic-navbar-nav {
+    margin-top: 20vh !important;
+  }
+}
+/* @media (min-width: 1266px) and (max-width: 1250px) {
+  #basic-navbar-nav {
+    margin-top: 15vh !important;
+  }
+} */

@@ -1,0 +1,123 @@
+/* mobile-styles */
+
+.productPage {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid #000000;
+}
+
+.bg-img {
+    background-size: cover;
+    max-width: 130px;
+    min-height: 100px;
+    background-position: center;
+    background-color: #ccc;
+}
+
+.content {
+    padding: 5px;
+}
+
+.mainTag {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#productRate {
+    color: green;
+}
+
+.td2 {
+    position: absolute;
+    margin-left: auto;
+    text-align: end;
+    align-items: flex-end;
+}
+
+#productRating {
+    color: green;
+}
+
+#star {
+    color: greenyellow;
+}
+
+#removeButton {
+    background-color: transparent;
+    color: rgb(218, 14, 14);
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+
+/* for big displays */
+
+@media only screen and (min-width: 400px) {
+    .productPage {
+        border: 1px solid rgb(0, 0, 0);
+        padding: 30px;
+    }
+    .card {
+        border: 1px solid #000000;
+    }
+    .bg-img {
+        background-size: cover;
+        max-width: 290px;
+        min-height: 180px;
+        background-position: center;
+        background-color: #ccc;
+    }
+    .content {
+        padding: 15px;
+        object-fit: contain;
+    }
+    .mainTag {
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 23px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    #productRate {
+        color: green;
+    }
+    .td2 {
+        position: absolute;
+        margin-left: auto;
+        text-align: end;
+        align-items: flex-end;
+    }
+    #productRating {
+        color: green;
+    }
+    #star {
+        color: greenyellow;
+    }
+    #removeButton {
+        background-color: transparent;
+        color: rgb(218, 14, 14);
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+    }
+}

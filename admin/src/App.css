@@ -1,0 +1,262 @@
+* {
+  font-family: "Recursive", sans-serif !important;
+}
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  margin-top: 8%;
+  max-width: 75%;
+}
+.app {
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.backgroundImage {
+  background-image: url("./images/homepage/HomepageBG.png");
+}
+
+.homepageBgText {
+  font-family: "Recursive", sans-serif !important;
+  text-align: center;
+  color: #f7f7ff;
+  display: block;
+}
+.weightloss {
+  background-image: url("./images/homepage/weightloss.png") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.weightgain {
+  background-image: url("./images/homepage/weightgain.png");
+}
+
+.trackcalories {
+  background-image: url("./images/homepage/trackyourcalories.png");
+}
+
+.maintxt {
+  position: relative;
+}
+.maintxt > img,
+.overlay-text {
+  position: absolute;
+}
+.overlay-text {
+  padding: 150px 50px;
+}
+
+/* quick delivery page */
+
+.items {
+  color: #3a4e42;
+}
+
+/* preference page */
+
+#breakfast1 {
+  display: -webkit-inline-box;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.fade-exit,
+.fade-exit-active {
+  opacity: 0;
+  display: none;
+}
+/* .allButtonEffect{
+  transition: all 0.2s;
+}
+.allButtonEffect:hover{
+  box-shadow: 5px 5px 8px 1px black;
+  border-color: black;
+  transform: translateY(-3px);
+} */
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: var(--Ourred) !important;
+  outline: 0;
+  box-shadow: none !important;
+  /* box-shadow: 0 0 0 0.2rem rgb(0, 123, 255, 0.25) !important; */
+}
+.divInMobile {
+  margin-left: 60px;
+}
+@media (max-width: 456px) {
+  .divInMobile {
+    margin-left: 0px;
+  }
+}
+.floatt {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.my-float {
+  width: 60% !important;
+  height: 60% !important;
+}
+:root {
+  --Ourred: #00442f;
+  --Ouryellow: #cbe386;
+  --Ourbutton: #acc927;
+}
+#demo-simple-select-outlined {
+  padding: 5px 32px 10px 13px;
+}
+.orderDetails {
+  padding: 20px 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details {
+  min-height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  border: .5px solid #ccc !important;
+  border-radius: 15px;
+}
+
+.orderDetailProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 25px 15px;
+  border: .5px solid #ccc !important;
+  border-radius: 15px;
+}
+
+.orderDetailCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px 30px;
+  margin: 20px 10px;
+  border: .5px solid #ccc !important;
+  border-radius: 15px;
+}
+
+.orderDetailHeading {
+  color: black;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.orderDetailTotalPrice {
+  color: black !important;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.orderDetailPrice {
+  color: black;
+}
+
+.orderDetailTotalHR {
+  margin: 2px;
+  padding-bottom: 5px;
+}
+
+.track {
+  position: relative;
+  background-color: #ddd;
+  height: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.track .step {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 25%;
+  margin-top: -18px;
+  text-align: center;
+  position: relative;
+}
+
+.track .step.active:before {
+  background: #ff5722;
+}
+
+.track .step::before {
+  height: 7px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 18px;
+}
+
+.track .step.active .icon {
+  background: #ee5435;
+  color: #fff;
+}
+
+.track .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  border-radius: 100%;
+  background: #ddd;
+}
+
+.track .step.active .text {
+  font-weight: 400;
+  color: #000;
+}
+
+.track .text {
+  display: block;
+  margin-top: 7px;
+}
+#demo-simple-select-outlined{
+  padding: 5px 32px 10px 13px;
+}

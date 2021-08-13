@@ -1,0 +1,14 @@
+.allButtonEffect{
+    transition: all 0.2s;
+    /* border: 1px solid #00442f !important; */
+}
+.allButtonEffect:hover{
+    /* box-shadow: 5px 5px 8px 1px black;*/
+    /* border-color: var(--Ourred) !important; 
+    background-color:var(--Ourred) !important;
+    color: yellow !important; */
+    /* transform: translateY(-3px) !important; */
+}
+/* .btn-primary{
+    border: none !important;
+} */

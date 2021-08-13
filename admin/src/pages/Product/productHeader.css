@@ -1,0 +1,43 @@
+.headerItem {
+    color: darkgreen;
+    display: grid;
+    font-size: 12px;
+    text-align: center;
+    max-width: 130px;
+    min-height: 100px;
+}
+
+.productButton {
+    border: transparent;
+    background-color: transparent;
+    color: darkgreen;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.svg_icons {
+    transform: scale(1.6);
+    margin: auto;
+}
+
+@media only screen and (min-width: 400px) {
+    .headerItem {
+        color: darkgreen;
+        display: grid;
+        font-size: 20px;
+        text-align: center;
+        max-width: 290px;
+        min-height: 190px;
+    }
+    .svg_icons {
+        transform: scale(2.5);
+        margin: auto;
+    }
+    .productButton {
+        border: transparent;
+        background-color: transparent;
+        color: darkgreen;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
