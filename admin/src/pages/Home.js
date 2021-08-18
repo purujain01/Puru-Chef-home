@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import API from '../utils/API.js'
 
 export default function Home2(props) {
-  const [count,setCount] = useState(1)
+  const [count,setCount] = useState(2)
   // console.log(props.user)
   useEffect(() => {
     API.getuserCount().then((all) => {
